@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>wechat</string>
+		<string>weixin</string>
+		<string>alipayauthtb</string>
+		<string>wx203a1671e701a3ae</string>
+		<string>wb926328166</string>
+		<string>sinaweibosso.926328166</string>
+		<string>alipayauth</string>
+		<string>aliminipayauth</string>
+		<string>tbopen23086819</string>
+		<string>aw</string>
+		<string>alipayre</string>
+		<string>alipaysso</string>
+		<string>alipayshare</string>
+		<string>alipaytlshare</string>
+		<string>alipaysopensdk</string>
+		<string>dingoamqxw6mcgmfikhues</string>
+		<string>dingoaogcpqa4l11w9fkga</string>
+		<string>alipayauthlogin</string>
+		<string>dingoad5zx837cletmybta</string>
+		<string>alicertpay</string>
+		<string>alipays</string>
+		<string>alipayqr</string>
+		<string>alipay</string>
+		<string>mqq</string>
+		<string>mqqapi</string>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>NSPrincipalClass</key>
+	<string></string>
+</dict>
+</plist>

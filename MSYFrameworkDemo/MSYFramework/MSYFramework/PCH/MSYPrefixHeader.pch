@@ -1,0 +1,109 @@
+//
+//  MSYPrefixHeader.pch
+//  MSYFramework
+//
+//  Created by 郭臻 on 2017/12/28.
+//  Copyright © 2017年 郭臻. All rights reserved.
+//
+
+#ifndef MSYPrefixHeader_pch
+#define MSYPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define Window [[UIApplication sharedApplication] keyWindow]
+#define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+#define SCREEN_WIDTH MIN(SCREENWIDTH,SCREENHEIGHT)
+#define CornerSizeView 10
+
+#define FloatViewSize 50
+#define IMEI [GetAppleIFA appleIFA]
+#define signtype @"md5"
+#define GetUsername(username) [[NSUserDefaults standardUserDefaults] setObject:username forKey:@"username"]
+#define Username [[NSUserDefaults standardUserDefaults] stringForKey:@"username"]
+
+#define GetUserID(userid) [[NSUserDefaults standardUserDefaults] setObject:userid forKey:@"userid"]
+
+#define UserID [[NSUserDefaults standardUserDefaults] stringForKey:@"userid"]
+#define GetAPPID(appid) [[NSUserDefaults standardUserDefaults] setObject:appid forKey:@"appid"]
+
+#define APPID [[NSUserDefaults standardUserDefaults] stringForKey:@"appid"]
+
+#define GetToken(token) [[NSUserDefaults standardUserDefaults] setObject:token forKey:@"token"]
+
+#define Getphone(phone) [[NSUserDefaults standardUserDefaults] setObject:phone forKey:@"phone"]
+
+#define Phone [[NSUserDefaults standardUserDefaults] stringForKey:@"phone"]
+
+#define Getqq(qq) [[NSUserDefaults standardUserDefaults] setObject:qq forKey:@"qq"]
+
+#define QQ [[NSUserDefaults standardUserDefaults] stringForKey:@"qq"]
+
+#define Getqun(qun) [[NSUserDefaults standardUserDefaults] setObject:qun forKey:@"qun"]
+
+#define Group [[NSUserDefaults standardUserDefaults] stringForKey:@"qun"]
+
+#define TOKEN [[NSUserDefaults standardUserDefaults] stringForKey:@"token"]
+
+#define MakeToast(str) [[UIApplication sharedApplication].keyWindow makeToast:str duration:2 position:CSToastPositionCenter]
+#define MakeTA [[UIApplication sharedApplication].keyWindow makeToastActivity:CSToastPositionCenter]
+#define HideTA [[UIApplication sharedApplication].keyWindow hideToastActivity]
+
+#pragma mark - 接口URL
+//前缀
+#define UNIFYURL @"http://api.yxitai.com/"
+
+//登录接口
+#define LoginURL @"login/MemberLogin"
+
+//快速登录
+#define QuickLoginURL @"register/quickregister"
+
+//QQ登录
+#define QQLoginURL @"register/QQQuick"
+
+//创建订单
+#define OrderURL @"Order/CreatOrder"
+
+//验证苹果回调
+#define JIAOYANURL @"Order/IosUpdateOrder"
+
+//发送短信接口
+#define SendMessageURL @"sms/SendMsg"
+
+//手机号注册接口
+#define PhoneRegisterURL @"register/MemberRegister"
+
+//修改密码
+#define FindPassWordURL @"login/FindPassByPhone"
+
+//创建订单
+#define CreatOrderURL @"Order/CreatOrderH5"
+
+//获取订单状态
+#define GetOrderStatusURL @"Order/GetOrderStatus"
+
+
+//创建角色
+#define CreatRoleURL @"Role/CreateRole"
+
+//更新角色
+#define UpdateRoleURL @"Role/UpdateRole"
+
+//获取悬浮球接口
+#define GetFloatStatus @"Member/GetFrame"
+
+//绑定手机号
+#define BindPhoneURL @"login/BindPhone"
+
+//获取客服接口
+#define GetServiceURL @"Member/GetCustom"
+
+//检查验证码接口
+#define CheckRegNumURL @"login/CheckMemberPhone"
+
+
+
+#endif /* MSYPrefixHeader_pch */

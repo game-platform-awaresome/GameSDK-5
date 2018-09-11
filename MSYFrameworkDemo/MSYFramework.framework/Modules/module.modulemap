@@ -1,0 +1,6 @@
+framework module MSYFramework {
+  umbrella header "MSYFramework.h"
+
+  export *
+  module * { export * }
+}
